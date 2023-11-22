@@ -1,0 +1,7 @@
+@mixin button-base($color){
+    height: 2.5rem;
+    padding: 0rem 1.3959rem;
+    border-radius: 0.2538rem;
+    border: 0.0761rem solid $color;
+    background: $color;
+}

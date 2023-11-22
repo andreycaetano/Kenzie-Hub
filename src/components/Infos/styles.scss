@@ -1,0 +1,26 @@
+@import "../../style/typography.scss";
+
+.divInfo{
+    display: flex;
+    height: 7.375rem;
+    align-items: center;
+    margin: 0 auto;
+    width: 58%;
+    justify-content: space-between;
+
+    h3{
+        @include title1($color: var(--grey-0));
+    }
+    span{
+        @include headline($color: var(--grey-1))
+    }
+}
+
+@media(max-width: 480px){
+    .divInfo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: normal;
+        width: 90%;
+    }
+}

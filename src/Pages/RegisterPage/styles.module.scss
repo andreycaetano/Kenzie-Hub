@@ -1,0 +1,26 @@
+@import "../../style/button.scss";
+
+.main{
+    background: var(--grey-4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    header{
+        display: flex;
+        width: 20.375rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.4813rem;
+        margin-top: 50px;
+        button{
+            @include button-base(var(--grey-3));
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--grey-0);
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@mixin title1($color: var(--grey-0)){
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 155.556%;
+    color: $color;
+}
+
+@mixin title2($color: var(--grey-0)){
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 164.964%;
+    color: $color;
+}
+
+@mixin headline($color: var(--grey-0)){
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 183.333%;
+    color: $color;
+}
+
+@mixin headlineBold($color: var(--grey-0)){
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 150%;
+    color: $color;
+}
+
+@mixin paragraph($color: var(--grey-0)){
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 114.206%;
+    color: $color;
+}

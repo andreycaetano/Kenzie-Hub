@@ -1,0 +1,32 @@
+@import "../../style/typography.scss";
+
+.sectionTechList{
+    width: 58%;
+    margin: 0 auto;
+    .techListHeader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3.125rem;
+        h2{
+            @include title2($color: var(--grey-0))
+        }
+        button{
+            background: transparent;
+            padding: 0;
+            border: none;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    ul{
+        padding: 1.4375rem 1.625rem;
+        background: var(--grey-3);
+        .listAlert{
+            @include title2
+        }
+    }
+}

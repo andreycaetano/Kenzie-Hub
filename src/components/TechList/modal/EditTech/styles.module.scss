@@ -1,0 +1,102 @@
+@import "../../../../style/button.scss";
+@import "../../../../style/typography.scss";
+
+.modalOverlay {
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .3);
+    .modalBox {
+        position: relative;
+        width: 100%;
+        max-width: 25rem;
+        background: var(--grey-3);
+        border-radius: 0.25rem;
+        box-shadow: 0rem 0.25rem 2.5rem -0.625rem rgba(0, 0, 0, 0.25);
+        .modalHeader {
+            background: var(--grey-2);
+            padding: 0.75rem 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0.25rem 0.25rem 0rem 0rem;
+
+            h2 {
+                @include title2($color: var(--grey-0));
+            }
+
+            button {
+                border: none;
+                padding: 0;
+                background: transparent;
+                font-family: "Nunito", sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--grey-1);
+            }
+        }
+        .modalForm {
+            display: flex;
+            flex-direction: column;
+            padding: 0.875rem 1.375rem;
+
+            label {
+                @include headlineBold($color: var(--grey-0));
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+
+            input {
+                height: 40px;
+                border-radius: 0.25rem;
+                border: 0.0761rem solid var(--grey-0);
+                background: var(--grey-2);
+                padding: 0 1.0625rem;
+                color: var(--grey-0);
+                font-family: 'Inter', sans-serif;
+                font-size: 16.243px;
+                font-style: normal;
+                font-weight: 400;
+
+                &::placeholder {
+                    color: var(--grey-0);
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16.243px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+
+            select{
+                height: 40px;
+                border-radius: 0.25rem;
+                border: 0.0761rem solid var(--grey-0);
+                background: var(--grey-2);
+                padding: 0 1.0625rem;
+                color: var(--grey-0);
+                font-family: 'Inter', sans-serif;
+                font-size: 16.243px;
+                font-style: normal;
+                font-weight: 400;
+            }
+            span{
+                @include headline($color: var(--negative))
+            }
+            button{
+                @include button-base($color: var(--color-primary));
+                margin-top: 1.875rem;
+                @include title2($color: var(--grey-0));
+                &:hover{
+                    background: var(--color-primary-focus);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import "../../../style/typography.scss";
+
+.techItem {
+    width: 100%;
+    height: 3.0625rem;
+    background: var(--grey-4);
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.375rem;
+    h2 {
+        @include headlineBold($color: var(--grey-0));
+    }
+    .divInfoTech{
+        margin: 0;
+        width: auto;
+        align-items: center;
+        display: flex;
+        span{
+            @include headline($color: var(--grey-1));
+            margin-right: 0.625rem;
+        }
+        button{
+            padding: 0;
+            margin: 0;
+            background: transparent;
+            border: none;
+            margin-right: 0.625rem;
+        }
+    }
+}
